@@ -16,6 +16,12 @@ object Versions {
     internal const val NAVIGATION_VERSION = "2.1.0"
     internal const val FACEBOOK_LOGIN_VERSION = "5.5.1"
 
+    internal const val RX_JAVA_2_VERSION = "2.2.14"
+    internal const val RX_JAVA_3_VERSION = "3.0.0-RC4"
+
+    internal const val RX_ANDROID_2_VERSION = "2.1.1"
+    internal const val RX_ANDROID_3_VERSION = "3.0.0-SNAPSHOT"
+
     internal const val JUNIT_VERSION = "4.12"
     internal const val MOCKITO_VERSION = "2.18.3"
     internal const val RUNNER_VERSION = "1.1.1"

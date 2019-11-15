@@ -65,9 +65,62 @@ object Dependencies {
     }
 
     object RX {
+
+        enum class Version {
+            TWO,
+            THREE
+        }
+
+        const val RX_JAVA_2 = "io.reactivex.rxjava2:rxjava:${Versions.RX_JAVA_2_VERSION}"
+        const val RX_JAVA_3 = "io.reactivex.rxjava3:rxjava:${Versions.RX_JAVA_3_VERSION}"
+
+        const val RX_ANDROID_2 = "io.reactivex.rxjava2:rxandroid:${Versions.RX_ANDROID_2_VERSION}"
+        const val RX_ANDROID_3 = "io.reactivex.rxjava2:rxandroid:${Versions.RX_ANDROID_3_VERSION}"
+
         const val RX_ANDROID_BLE = "com.polidea.rxandroidble2:rxandroidble:1.10.0"
-        const val RX_ANDROID = "io.reactivex.rxjava2:rxandroid:2.1.1"
         const val RX_REPLAYING_SHARE = "com.jakewharton.rx2:replaying-share:2.1.1"
+
+        fun getRxJavaDependency(version: Version): String {
+            return when (version) {
+                Version.TWO -> {
+                    RX_JAVA_2
+                }
+
+                Version.THREE -> {
+                    RX_JAVA_3
+                }
+            }
+        }
+
+        fun getRxAndroidDependency(version: Version): String {
+            return when (version) {
+                Version.TWO -> {
+                    RX_ANDROID_2
+                }
+
+                Version.THREE -> {
+                    RX_ANDROID_3
+                }
+            }
+        }
+
+        fun DependencyHandler.addRxJava(version: Version) {
+            implementation(getRxJavaDependency(version))
+        }
+
+        fun DependencyHandler.addRxJavaWithAndroid(version: Version) {
+            implementation(getRxJavaDependency(version))
+            implementation(getRxAndroidDependency(version))
+        }
+
+        fun DependencyHandler.addLatestRxJava() {
+            implementation(getRxJavaDependency(Version.THREE))
+        }
+
+        fun DependencyHandler.addLatestRxJavaWithAndroid() {
+            implementation(getRxJavaDependency(Version.THREE))
+            implementation(getRxAndroidDependency(Version.THREE))
+        }
     }
 
     object Kotlin {
