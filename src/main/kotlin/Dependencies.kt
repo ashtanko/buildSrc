@@ -42,9 +42,13 @@ object Dependencies {
             "androidx.fragment:fragment-testing:${Versions.FRAGMENT_VERSION}"
 
         const val PAGING = "androidx.paging:paging-runtime-ktx:2.1.0"
+
+        const val ANDROID_SECURITY_CRYPTO = "androidx.security:security-crypto:1.0.0-alpha02"
     }
 
     object Other {
+        const val STATE_DELEGATOR = "com.redmadrobot:state-delegator:1.7"
+
         const val ROOTBEER = "com.scottyab:rootbeer-lib:0.0.7"
         const val CRASHLYTICS = "com.crashlytics.sdk.android:crashlytics:2.9.9@aar"
         const val CIRCLE_INDICATOR = "me.relex:circleindicator:2.1.0"
