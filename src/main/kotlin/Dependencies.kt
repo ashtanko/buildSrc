@@ -32,8 +32,8 @@ object Dependencies {
         const val APPCOMPAT = "androidx.appcompat:appcompat:${Versions.ANDROID_SUPPORT_VERSION}"
         const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:1.0.0"
         const val CARD_VIEW = "androidx.cardview:cardview:1.0.0"
-        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-beta2"
-        const val MATERIAL = "com.google.android.material:material:1.0.0"
+        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+        const val MATERIAL = "com.google.android.material:material:1.2.0-alpha03"
         const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANDROID_SUPPORT_VERSION}"
         const val KTX_CORE = "androidx.core:core-ktx:1.2.0-beta01"
         const val FRAGMENT_RUNTIME = "androidx.fragment:fragment:${Versions.FRAGMENT_VERSION}"
@@ -208,7 +208,7 @@ object Dependencies {
         const val CROPPER = "com.theartofdev.edmodo:android-image-cropper:2.8.0"
         const val COMPRESSOR = "id.zelory:compressor:2.1.0"
         const val GLIDE = "com.github.bumptech.glide:glide:4.10.0"
-        const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:4.9.0"
+        const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:4.10.0"
     }
 
     object Lifecycle {
@@ -226,7 +226,7 @@ object Dependencies {
         const val ANALYTICS = "com.google.firebase:firebase-analytics:16.4.0"
         const val CRASH = "com.google.firebase:firebase-crash:16.2.1"
         const val CRASHLYTICS = "com.crashlytics.sdk.android:crashlytics:2.9.9"
-        const val PERFORMANCE = "com.google.firebase:firebase-perf:16.2.4"
+        const val PERFORMANCE = "com.google.firebase:firebase-perf:19.0.4"
     }
 
     object Navigation {
