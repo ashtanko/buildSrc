@@ -41,7 +41,7 @@ object Dependencies {
         const val FRAGMENT_TESTING =
             "androidx.fragment:fragment-testing:${Versions.FRAGMENT_VERSION}"
 
-        const val PAGING = "androidx.paging:paging-runtime-ktx:2.1.0"
+        const val PAGING = "androidx.paging:paging-runtime-ktx:2.1.1"
 
         const val ANDROID_SECURITY_CRYPTO = "androidx.security:security-crypto:1.0.0-alpha02"
     }
