@@ -1,7 +1,9 @@
 import Versions.APP_CENTER_VERSION
+import Versions.BATTERY
 import Versions.COIL_VERSION
 import Versions.DAGGER_VERSION
 import Versions.FACEBOOK_LOGIN_VERSION
+import Versions.FLIPPER_VERSION
 import Versions.GOOGLE_SERVICES_VERSION
 import Versions.GRADLE_PLUGIN_VERSION
 import Versions.KODEIN_VERSION
@@ -9,9 +11,11 @@ import Versions.KOIN_VERSION
 import Versions.KOTLIN_COROUTINES_VERSION
 import Versions.KOTLIN_VERSION
 import Versions.LIFECYCLE_VERSION
+import Versions.LITHO_VERSION
 import Versions.NAVIGATION_VERSION
 import Versions.OKHTTP_VERSION
 import Versions.RETROFIT_VERSION
+import Versions.STETHO_VERSION
 import Versions.TOOTHPICK_VERSION
 import Versions.WORK_VERSION
 import Versions.ZXING_VERSION
@@ -258,6 +262,42 @@ object Dependencies {
 
     object Facebook {
         const val FACEBOOK_LOGIN = "com.facebook.android:facebook-login:$FACEBOOK_LOGIN_VERSION"
+
+        // more information about litho: https://fblitho.com/docs/getting-started#doc-gradle-kt
+        const val LITHO_CORE = "com.facebook.litho:litho-core:$LITHO_VERSION"
+        const val LITHO_WIDGET = "com.facebook.litho:litho-widget:$LITHO_VERSION"
+        const val LITHO_PROCESSOR = "com.facebook.litho:litho-processor:$LITHO_VERSION"
+        const val LITHO_FRESCO = "com.facebook.litho:litho-fresco:$LITHO_VERSION"
+        const val LITHO_ANNOTATIONS = "com.facebook.litho:litho-annotations:0.19.0"
+
+        fun DependencyHandler.applyLithoDependencies(
+            vararg implement: String
+        ) {
+            implementation(LITHO_CORE)
+            implementation(LITHO_WIDGET)
+            kapt(LITHO_PROCESSOR)
+            implement.forEach {
+                implementation(it)
+            }
+        }
+
+        // more information about stetho: http://facebook.github.io/stetho/
+        const val STETHO = "com.facebook.stetho:stetho:$STETHO_VERSION"
+        const val STETHO_OKHTTP = "com.facebook.stetho:stetho-okhttp3:$STETHO_VERSION"
+        const val STETHO_URL_CONNECTION = "com.facebook.stetho:stetho-urlconnection:$STETHO_VERSION"
+
+        //more information about flipper: https://fbflipper.com/
+        //FLIPPER_VERSION
+        const val FLIPPER = "com.facebook.flipper:flipper:$FLIPPER_VERSION"
+        const val FLIPPER_NOOP = "com.facebook.flipper:flipper-noop:$FLIPPER_VERSION"
+        const val FLIPPER_LITHO = "com.facebook.flipper:flipper-litho-plugin:$FLIPPER_VERSION"
+
+        // more information about battery metrics:https://github.com/facebookincubator/Battery-Metrics
+        const val BATTERY_METRICS = "com.facebook.battery:metrics:$BATTERY"
+        const val BATTERY_REPORTERS = "com.facebook.battery:reporters:$BATTERY"
+        const val BATTERY_SERIALIZERS = "com.facebook.battery:serializers:$BATTERY"
+
+        const val SO_LOADER = "com.facebook.soloader:soloader:0.5.1"
     }
 
     object Log {

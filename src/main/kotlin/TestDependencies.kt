@@ -1,5 +1,6 @@
 import Versions.JUNIT_VERSION
 import Versions.KOTLIN_VERSION
+import Versions.LITHO_VERSION
 import Versions.MOCKITO_VERSION
 import Versions.ROOM_VERSION
 import Versions.RUNNER_VERSION
@@ -22,5 +23,9 @@ object TestDependencies {
         const val CORE = "org.mockito:mockito-core:$MOCKITO_VERSION"
         const val ANDROID = "org.mockito:mockito-android:$MOCKITO_VERSION"
         const val KOTLIN_2 = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0"
+    }
+
+    object Facebook {
+        const val LITHO_TESTING = "com.facebook.litho:litho-testing:$LITHO_VERSION"
     }
 }

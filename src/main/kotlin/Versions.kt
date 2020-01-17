@@ -33,6 +33,12 @@ object Versions {
     internal const val KODEIN_VERSION = "6.4.0"
     internal const val ARCH_CORE_VERSION = "2.1.0"
 
+    //region facebook
+    internal const val LITHO_VERSION = "0.33.0"
+    internal const val STETHO_VERSION = "1.5.1"
+    internal const val FLIPPER_VERSION = "0.30.1"
+    internal const val BATTERY = "1.0.0"
+
     const val DETEKT_VERSION = "1.0.0-RC16"
     const val KTLINT_VERSION = "8.2.0"
     const val ERRORPRONE_VERSION = "2.3.3"
