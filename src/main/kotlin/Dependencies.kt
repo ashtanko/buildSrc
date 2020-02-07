@@ -32,22 +32,30 @@ object Dependencies {
     }
 
     object AndroidSdk {
-        const val ACTIVITY_KTX = "androidx.activity:activity-ktx:1.1.0-rc01"
-        const val APPCOMPAT = "androidx.appcompat:appcompat:${Versions.ANDROID_SUPPORT_VERSION}"
-        const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:1.0.0"
+        const val ACTIVITY_KTX = "androidx.activity:activity-ktx:1.1.0"
+        const val APPCOMPAT = "androidx.appcompat:appcompat:${Versions.APPCOMPAT_VERSION}"
+        const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:1.1.0"
         const val CARD_VIEW = "androidx.cardview:cardview:1.0.0"
         const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
-        const val MATERIAL = "com.google.android.material:material:1.2.0-alpha03"
-        const val ANNOTATION = "androidx.annotation:annotation:${Versions.ANDROID_SUPPORT_VERSION}"
-        const val KTX_CORE = "androidx.core:core-ktx:1.2.0-beta01"
+        const val MATERIAL = "com.google.android.material:material:1.2.0-alpha04"
+        const val ANNOTATION = "androidx.annotation:annotation:1.1.0"
+        const val KTX_CORE = "androidx.core:core-ktx:1.3.0-alpha01"
         const val FRAGMENT_RUNTIME = "androidx.fragment:fragment:${Versions.FRAGMENT_VERSION}"
         const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:${Versions.FRAGMENT_VERSION}"
         const val FRAGMENT_TESTING =
             "androidx.fragment:fragment-testing:${Versions.FRAGMENT_VERSION}"
 
-        const val PAGING = "androidx.paging:paging-runtime-ktx:2.1.1"
+        const val NAVIGATION_FRAGMENT = "android.arch.navigation:navigation-fragment:1.0.0"
+        const val NAVIGATION_UI = "android.arch.navigation:navigation-ui:1.0.0"
+        const val CAMERA_CORE = "androidx.camera:camera-core:1.0.0-alpha09"
+        const val CAMERA2 = "androidx.camera:camera-camera2:1.0.0-alpha09"
+        const val CAMERA_LIFECYCLE = "androidx.camera:camera-lifecycle:1.0.0-alpha03"
+        const val CAMERA_VIEW = "androidx.camera:camera-view:1.0.0-alpha06"
 
+        const val PAGING = "androidx.paging:paging-runtime-ktx:2.1.1"
         const val ANDROID_SECURITY_CRYPTO = "androidx.security:security-crypto:1.0.0-alpha02"
+
+
     }
 
     object Other {
