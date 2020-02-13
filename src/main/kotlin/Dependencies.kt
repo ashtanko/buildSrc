@@ -213,6 +213,16 @@ object Dependencies {
         const val OKHTTP = "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"
         const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
         const val GSON = "com.google.code.gson:gson:2.8.5"
+        const val KLAXON = "com.beust:klaxon:5.0.1"
+
+        fun DependencyHandler.addBaseNetworkDependencies() {
+            implementation(RETROFIT)
+            implementation(RETROFIT_CONVERTER_GSON)
+            implementation(RETROFIT_COROUTINES_ADAPTER)
+            implementation(OKHTTP)
+            implementation(LOGGING_INTERCEPTOR)
+            implementation(GSON)
+        }
     }
 
     object ImageProcessor {

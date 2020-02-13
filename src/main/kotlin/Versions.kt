@@ -1,7 +1,7 @@
 object Versions {
 
     internal const val KOTLIN_VERSION = "1.3.61"
-    internal const val GRADLE_PLUGIN_VERSION = "3.6.0-rc02"
+    internal const val GRADLE_PLUGIN_VERSION = "4.0.0-alpha09"
     internal const val DAGGER_VERSION = "2.25.2"
     internal const val RETROFIT_VERSION = "2.6.2"
     internal const val GOOGLE_SERVICES_VERSION = "4.0.1"
